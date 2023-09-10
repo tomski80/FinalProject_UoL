@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102009aa059673b4c96843ba8beffaa7, type: 3}
+  m_Name: CraftPart_Wheel_002
+  m_EditorClassIdentifier: 
+  prefabName: Chrome Wheel
+  prefab: {fileID: 3503774712279078514, guid: ec247f3df16a478428b814faf55c66b1, type: 3}
+  Image: {fileID: 21300000, guid: 86745b5fd74ef284cacaf07ffafd8a96, type: 3}
+  tag: 
+  id: 5
