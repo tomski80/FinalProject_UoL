@@ -5,7 +5,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3142104131521427759, guid: 3da5c67e16f4ec64fb5075f4fca8fde8,
@@ -72,8 +71,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5771769817370577757, guid: 3da5c67e16f4ec64fb5075f4fca8fde8,
+        type: 3}
+      propertyPath: m_MassScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771769817370577757, guid: 3da5c67e16f4ec64fb5075f4fca8fde8,
+        type: 3}
+      propertyPath: m_BreakForce
+      value: 150000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771769817370577757, guid: 3da5c67e16f4ec64fb5075f4fca8fde8,
+        type: 3}
+      propertyPath: m_BreakTorque
+      value: 150000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771769817370577757, guid: 3da5c67e16f4ec64fb5075f4fca8fde8,
+        type: 3}
+      propertyPath: m_ConnectedMassScale
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3da5c67e16f4ec64fb5075f4fca8fde8, type: 3}

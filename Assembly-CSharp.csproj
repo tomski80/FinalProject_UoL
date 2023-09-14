@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PhysicManager.cs" />
     <Compile Include="Assets\Scripts\CraftPartBase.cs" />
+    <Compile Include="Assets\Scripts\SteveManager.cs" />
     <Compile Include="Assets\Scripts\GameMode.cs" />
     <Compile Include="Assets\Scripts\Craft.cs" />
     <Compile Include="Assets\Scripts\CraftPartWing.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Assets\Scripts\Example.cs" />
     <Compile Include="Assets\Scripts\CraftPartInfo.cs" />
     <Compile Include="Assets\Scripts\GameModeDesigner.cs" />
-    <Compile Include="Assets\Scripts\SteveManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -97,7 +97,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\WWII P47 Thunderbolt\aeroplanes.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\UnityAssetsFromStore\SyntyStudios\PolygonStarter\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 102009aa059673b4c96843ba8beffaa7, type: 3}
-  m_Name: CraftPart_Base_007
+  m_Name: CraftPart_Base_008
   m_EditorClassIdentifier: 
-  prefabName: Airplane Tail
-  prefab: {fileID: 6485173435352751032, guid: d7519084603e80948bbd5c77f4e2a784, type: 3}
-  Image: {fileID: 21300000, guid: b9778328016a80648a102d35516c232d, type: 3}
-  tag: tail
+  prefabName: Lobster Ride
+  prefab: {fileID: 3812078507980773202, guid: 404ea99c9f688ca4f9e43e2031b8b5fa, type: 3}
+  Image: {fileID: 21300000, guid: 4584ff3b69bdc8c4ea8c2d67dc200996, type: 3}
+  tag: lobster
   id: 6

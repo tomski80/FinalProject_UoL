@@ -204,63 +204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cae502a36f24e44a36b23b20767022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &424490892
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_Name
-      value: Chaise_HP_t1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0010731833
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0034211183
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.70326996
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7109229
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -269.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 445e1998756a85c4ca2b8d18241d927a, type: 3}
 --- !u!1 &461003922
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +701,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596096859}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -932,7 +875,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614275574}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2838,7 +2781,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341403499}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4115,7 +4058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 125.4, y: 94.4}
+  m_AnchoredPosition: {x: 125.3999, y: 94.400024}
   m_SizeDelta: {x: 282.5, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904438524
@@ -4328,9 +4271,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7ba2bb79da52ba3438057a65ffe0721b, type: 2}
   - {fileID: 11400000, guid: d5d9a840cd2adec47b9c77504f8262e8, type: 2}
   - {fileID: 11400000, guid: 958c4fa384ef8884e966b66c88190078, type: 2}
+  - {fileID: 11400000, guid: dcc83f2a7be912d4e96fab6784bd66c5, type: 2}
   CraftWheels:
   - {fileID: 11400000, guid: 4924a468029463647a7f19ccafdaeca1, type: 2}
   - {fileID: 11400000, guid: b117439311758124aa13a33d90b5b864, type: 2}
+  - {fileID: 11400000, guid: 17d902324f810c34fa9667f2aa287d90, type: 2}
+  - {fileID: 11400000, guid: 8356aec8ad3098f4c8c6c99de50cc8e9, type: 2}
   CraftWings:
   - {fileID: 11400000, guid: 74cbd41163597604687b7606ceb86f05, type: 2}
   - {fileID: 11400000, guid: 79a7cf6073d0ccd498832211c77d337d, type: 2}
@@ -4572,7 +4518,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964485943}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

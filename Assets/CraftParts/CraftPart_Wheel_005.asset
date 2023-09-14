@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 102009aa059673b4c96843ba8beffaa7, type: 3}
-  m_Name: CraftPart_Base_007
+  m_Name: CraftPart_Wheel_005
   m_EditorClassIdentifier: 
-  prefabName: Airplane Tail
-  prefab: {fileID: 6485173435352751032, guid: d7519084603e80948bbd5c77f4e2a784, type: 3}
-  Image: {fileID: 21300000, guid: b9778328016a80648a102d35516c232d, type: 3}
-  tag: tail
-  id: 6
+  prefabName: Old Wooden Wheel
+  prefab: {fileID: 4278895596278041973, guid: dec6f60d515f9bc40bda7a6263308684, type: 3}
+  Image: {fileID: 21300000, guid: 12ab4a77e0d2c1d418cd90eb0f07e1a7, type: 3}
+  tag: Airplane Wheel
+  id: 5
