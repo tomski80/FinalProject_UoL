@@ -7,7 +7,9 @@ public class GameplayCameraManager : MonoBehaviour
     GameObject craft;
     Rigidbody craftRB;
     Craft craftScript;
-    public float cameraOffset = -30.0f;
+    public float cameraOffsetX = -30.0f;
+    public float cameraOffsetY = 3.0f;
+    public float cameraOffsetZ = -5.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,7 @@ public class GameplayCameraManager : MonoBehaviour
     void Update()
     {
         
-        transform.position = craftRB.transform.position + new Vector3(cameraOffset, 0, -10);
+        transform.position = craftRB.transform.position + new Vector3(cameraOffsetX, cameraOffsetY , cameraOffsetZ);
     }
 }
 

@@ -81,6 +81,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\mia-ww1-set01\documentation - Meso-Industrial_Age_WW1_Set_01 v2.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Fonts\Titan_One\OFL.txt" />
     <None Include="Assets\Super Spitfire\readme.txt" />
     <None Include="Assets\UnityAssetsFromStore\SyntyStudios\PolygonStarter\PolygonPrototype\Shaders\Prototype_Object.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />

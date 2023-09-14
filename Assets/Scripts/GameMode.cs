@@ -36,6 +36,7 @@ public class GameMode : MonoBehaviour
         }
 
         craft.transform.position = spawnPoint.position;
+        craft.transform.rotation = spawnPoint.rotation;
     }
 
     public void Update()
@@ -56,7 +57,7 @@ public class GameMode : MonoBehaviour
         {
             //we want to add constant force to the craft first
             Vector3 m_Direction = Vector3.forward;
-            baseRB.AddForce(craft.transform.forward * -2000);
+            baseRB.AddForce(m_Direction * -2000);
         }
     }
 

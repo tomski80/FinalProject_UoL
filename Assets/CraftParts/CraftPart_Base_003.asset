@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102009aa059673b4c96843ba8beffaa7, type: 3}
   m_Name: CraftPart_Base_003
   m_EditorClassIdentifier: 
-  prefabName: Old Hover Craft
+  prefabName: Hover Craft
   prefab: {fileID: 1397294808901836, guid: eb3be05a67a84c549bd4de0718d889e4, type: 3}
   Image: {fileID: 21300000, guid: 4d9a70303261ab3419ba5169459e3913, type: 3}
   tag: 

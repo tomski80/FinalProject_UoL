@@ -98,7 +98,8 @@ public class MenuButtonsManager : MonoBehaviour
         CraftPartToSpawn craftPartToSpawn = button.GetComponent<CraftPartToSpawn>();
 
         Vector3 spawnPos = cursor3d.transform.position;
-        Quaternion spawnRotation = Quaternion.identity;// cursor3d.transform.rotation;
+        Quaternion spawnRotation = Quaternion.Euler(0,90,0);// cursor3d.transform.rotation;
+        
 
         GameObject spawnedObject = Instantiate(craftPartToSpawn.craftPartPrefab, spawnPos, spawnRotation);
         if (craft.CraftBuild.Count == 0)
