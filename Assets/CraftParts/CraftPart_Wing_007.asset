@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 102009aa059673b4c96843ba8beffaa7, type: 3}
-  m_Name: CraftPart_Wing_004
+  m_Name: CraftPart_Wing_007
   m_EditorClassIdentifier: 
-  prefabName: Butterfly Wings
-  prefab: {fileID: 6034168328177695686, guid: f6fcd319fe6caa04295a88ea16f830db, type: 3}
-  Image: {fileID: 21300000, guid: 60fe6cf0d353e3d48b5eb54fe9f168c8, type: 3}
-  tag: butterfly
-  id: 12
+  prefabName: 'Wing '
+  prefab: {fileID: 1199664811954519507, guid: 4e7e431766c2f934e82d68dbfce1de0d, type: 3}
+  Image: {fileID: 21300000, guid: 236ede9cb0b9d274396be9fdd33c83ab, type: 3}
+  tag: plaintail
+  id: 122

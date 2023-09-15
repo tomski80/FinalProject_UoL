@@ -187,4 +187,4 @@ FixedJoint:
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 2
-  m_ConnectedMassScale: 0.1
+  m_ConnectedMassScale: 1

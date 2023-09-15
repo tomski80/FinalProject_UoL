@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabName: Wing 003
   prefab: {fileID: 3214677370993934354, guid: 0602cfb6ea5c28945a089ccdd7c3ce1f, type: 3}
-  Image: {fileID: 21300000, guid: a05e7c3767be5d64e9b791dcc20b2ed8, type: 3}
+  Image: {fileID: 21300000, guid: 4c25ee7e92fefdf459ce32271e408197, type: 3}
   tag: Hangglider
   id: 8

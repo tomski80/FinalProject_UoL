@@ -555,12 +555,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595980317}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 129e262877f268845871d62a6a40ab77, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.498
+  m_Volume: 0.238
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2034,7 +2034,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999470659}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2086,7 +2086,7 @@ Transform:
   m_GameObject: {fileID: 999470659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2286.219, y: 2286.219, z: 2286.219}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4285,17 +4285,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d5d9a840cd2adec47b9c77504f8262e8, type: 2}
   - {fileID: 11400000, guid: dcc83f2a7be912d4e96fab6784bd66c5, type: 2}
   CraftWheels:
-  - {fileID: 11400000, guid: 4924a468029463647a7f19ccafdaeca1, type: 2}
   - {fileID: 11400000, guid: 17d902324f810c34fa9667f2aa287d90, type: 2}
   - {fileID: 11400000, guid: 8356aec8ad3098f4c8c6c99de50cc8e9, type: 2}
   - {fileID: 11400000, guid: 8f127054617b302468f029f6e0ef62c5, type: 2}
   - {fileID: 11400000, guid: 7fe52837bf185ea4b9024ff9ecf51be6, type: 2}
   CraftWings:
-  - {fileID: 11400000, guid: 74cbd41163597604687b7606ceb86f05, type: 2}
-  - {fileID: 11400000, guid: 79a7cf6073d0ccd498832211c77d337d, type: 2}
   - {fileID: 11400000, guid: 1d27b9e15803f7c4c9b31e2f3b44d67a, type: 2}
   - {fileID: 11400000, guid: 25168e882002d174397e0cb8a8898f60, type: 2}
   - {fileID: 11400000, guid: 3abb392a3d091744e910bb0d2a86ee85, type: 2}
+  - {fileID: 11400000, guid: 46591b0f26bf2b843a479002a2bfb977, type: 2}
+  - {fileID: 11400000, guid: 3f5803e216ee17c40a6d0f670282ff3d, type: 2}
   CraftMisc: []
 --- !u!4 &1916205546
 Transform:
