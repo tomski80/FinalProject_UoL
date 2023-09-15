@@ -132,7 +132,7 @@ FixedJoint:
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 2
-  m_ConnectedMassScale: 0.5
+  m_ConnectedMassScale: 1
 --- !u!114 &7501741927444641927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +234,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  liftPower: 89
-  maxLift: 400
-  velocityScale: 1.15
+  liftPower: 35
+  maxLift: 70
+  velocityScale: 1

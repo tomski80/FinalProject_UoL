@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3801499525147021599}
   - component: {fileID: 1345047081896589782}
   - component: {fileID: 1866764770989067339}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: air_Biplane_A_Tail_Rudder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3396842902544074059}
   - component: {fileID: 7886775669880781317}
   - component: {fileID: 8687709531319338386}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: air_Biplane_A_Tail_Right_Flap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 6124034674799141681}
   - component: {fileID: 1500735613364513867}
   - component: {fileID: 4604649970718487605}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: air_Biplane_A_Tail_Left_Flap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 6796943257155367817}
   - component: {fileID: 8442929058977045479}
   - component: {fileID: -1107297426774541717}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Craft_Wing_BiPlaneTail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,8 +424,8 @@ FixedJoint:
   m_BreakTorque: 60000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 2
-  m_ConnectedMassScale: 0.1
+  m_MassScale: 3
+  m_ConnectedMassScale: 2
 --- !u!114 &8442929058977045479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +527,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  liftPower: 35
-  maxLift: 200
+  liftPower: 5
+  maxLift: 10
   velocityScale: 1

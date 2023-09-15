@@ -126,7 +126,7 @@ HingeJoint:
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
-  m_ConnectedMassScale: 5
+  m_ConnectedMassScale: 2
 --- !u!114 &1849563494275514490
 MonoBehaviour:
   m_ObjectHideFlags: 0

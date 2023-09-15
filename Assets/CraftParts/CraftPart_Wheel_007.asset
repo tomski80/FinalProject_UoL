@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabName: Sport Car Wheel
   prefab: {fileID: 5481913615728675522, guid: a75fc2637a47662428dbee31046a2822, type: 3}
-  Image: {fileID: 21300000, guid: 038cbe0a4a8b7674d8815809fe640cd9, type: 3}
+  Image: {fileID: 21300000, guid: b3a78ffe914638240b4e2a23046a10b0, type: 3}
   tag: Truck Wheel
   id: 15
