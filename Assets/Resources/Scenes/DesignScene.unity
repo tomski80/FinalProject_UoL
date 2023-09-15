@@ -4283,7 +4283,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fa10893404a9d2c4d83c8a8ba6d231b2, type: 2}
   - {fileID: 11400000, guid: 7ba2bb79da52ba3438057a65ffe0721b, type: 2}
   - {fileID: 11400000, guid: d5d9a840cd2adec47b9c77504f8262e8, type: 2}
-  - {fileID: 11400000, guid: 958c4fa384ef8884e966b66c88190078, type: 2}
   - {fileID: 11400000, guid: dcc83f2a7be912d4e96fab6784bd66c5, type: 2}
   CraftWheels:
   - {fileID: 11400000, guid: 4924a468029463647a7f19ccafdaeca1, type: 2}
@@ -4294,6 +4293,9 @@ MonoBehaviour:
   CraftWings:
   - {fileID: 11400000, guid: 74cbd41163597604687b7606ceb86f05, type: 2}
   - {fileID: 11400000, guid: 79a7cf6073d0ccd498832211c77d337d, type: 2}
+  - {fileID: 11400000, guid: 1d27b9e15803f7c4c9b31e2f3b44d67a, type: 2}
+  - {fileID: 11400000, guid: 25168e882002d174397e0cb8a8898f60, type: 2}
+  - {fileID: 11400000, guid: 3abb392a3d091744e910bb0d2a86ee85, type: 2}
   CraftMisc: []
 --- !u!4 &1916205546
 Transform:

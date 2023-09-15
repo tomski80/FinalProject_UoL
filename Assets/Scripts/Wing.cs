@@ -11,6 +11,10 @@ public class Wing : MonoBehaviour
     public float liftPower;                //approximation of area 
     public float maxLift;
 
+    public float velocityScale = 10.0f;         //need to scale velocity as we not really have realistic scale or speeds
+
+    bool WingBroke = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +24,31 @@ public class Wing : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 AoAoY = CalculateAngleOfAttack();
-        Vector3 liftForce = CalculateLift(AoAoY.x);
-        //Vector3 yawForce = CalculateLift(AoAoY.y);
+        //respect if body is kinematic, so we don't add this force 
+        if(!rb.isKinematic)
+        {
+            Vector2 AoAoY = CalculateAngleOfAttack();
+            Vector3 liftForce = CalculateLift(AoAoY.x);
+            //Vector3 yawForce = CalculateLift(AoAoY.y);
 
-        rb.AddForce(liftForce);
+            rb.AddForce(liftForce);
+        }
+        
+    }
+
+
+    public void OnJointBreak(float breakForce)
+    {
+        Debug.Log("Wing Broke off?");
+        WingBroke=true; 
     }
 
     Vector2 CalculateAngleOfAttack()
     {
         //Lift also depends on Angle of Attack (AOA), which is the angle between the direction the plane’s velocity is pointing, and the direction the plane’s nose is pointing.
+        Vector3 CraftVelocity = rb.velocity * velocityScale;
 
-        Vector3 localVelocity = rb.transform.InverseTransformDirection(rb.velocity);
+        Vector3 localVelocity = rb.transform.InverseTransformDirection(CraftVelocity);
         
         Vector3 localAngularVelocity = rb.transform.InverseTransformDirection(rb.angularVelocity);
 
@@ -42,17 +59,17 @@ public class Wing : MonoBehaviour
 
         
         // Calculate the angle of attack of the wings
-        Vector3 velocity = rb.velocity;
+        Vector3 velocity = rb.velocity * velocityScale;
         Debug.DrawLine((velocity * 0.1f) + transform.position, transform.position, Color.green);
         Vector3 relativeVelocity = (velocity - transform.forward) * Vector3.Dot(velocity, transform.forward);
         Vector3 chordLine = transform.forward;
-       // Debug.DrawLine(chordLine + transform.position, transform.position, Color.red);
-       // Debug.DrawLine(relativeVelocity + transform.position, transform.position, Color.green);
+        Debug.DrawLine(chordLine + transform.position, transform.position, Color.red);
+        Debug.DrawLine(relativeVelocity + transform.position, transform.position, Color.green);
         float angleOfAttack = Vector3.SignedAngle(relativeVelocity, chordLine, transform.right);
        
         
 
-        Debug.Log(angleOfAttack);
+        //Debug.Log(angleOfAttack);
         return new Vector2(angleOfAttack, angleOfAttackYaw);
     }
 
@@ -84,12 +101,14 @@ public class Wing : MonoBehaviour
         // CL is the coefficient of lift
         //Debug.Log("Angle of Attack Degrees = "+ (180 - angleOfAttack * Mathf.Rad2Deg));
         // simplified lift = V^2 * LiftCoeefficient * liftPower;
-        Vector3 liftVelocity =  Vector3.ProjectOnPlane(rb.transform.InverseTransformDirection(rb.velocity),transform.up);
+        Vector3 CraftVelocity = rb.velocity * velocityScale;
+
+        Vector3 liftVelocity =  Vector3.ProjectOnPlane(rb.transform.InverseTransformDirection(CraftVelocity),transform.up);
         //Debug.DrawLine(liftVelocity + transform.position, transform.position);
         float liftVelocity2 = liftVelocity.sqrMagnitude;
         float liftCoefficient = aoACurve.Evaluate(angleOfAttack);
         float liftForce = liftVelocity2 * liftCoefficient * liftPower;
-        Debug.Log("LiftForce = " + liftForce);
+       // Debug.Log("LiftForce = " + liftForce);
         // lift direction is penperdicular to velocity 
         //Vector3 liftDirection = Vector3.Cross(liftVelocity.normalized, -Vector3.right);
         // lift is always up 
@@ -110,8 +129,12 @@ public class Wing : MonoBehaviour
         inducedDrag = inducedDrag * inducedDragCurve.Evaluate(Mathf.Max(0, liftVelocity.z));
         //Debug.Log("Induced Draf" + inducedDrag);
         Debug.DrawLine((inducedDrag * 0.001f) + transform.position, transform.position, Color.magenta);
-        Debug.DrawLine((lift * 0.001f) + transform.position, transform.position, Color.blue);
+        Debug.DrawLine((lift) + transform.position, transform.position, Color.blue);
 
-        return lift + inducedDrag;
+        if(WingBroke)
+        {
+            return Vector3.zero;
+        }
+        return lift;// + inducedDrag;
     }
 }

@@ -5,7 +5,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 721a7003375407e44b233a61f7288ae2,
@@ -83,26 +82,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Craft_Wheel_002
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 721a7003375407e44b233a61f7288ae2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 721a7003375407e44b233a61f7288ae2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6808181434655133276}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 721a7003375407e44b233a61f7288ae2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4853456570209258596}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 721a7003375407e44b233a61f7288ae2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 459500641307308059}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 721a7003375407e44b233a61f7288ae2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 149473472773515713}
   m_SourcePrefab: {fileID: 100100000, guid: 721a7003375407e44b233a61f7288ae2, type: 3}
 --- !u!1 &3503774712279078514 stripped
 GameObject:
@@ -110,20 +95,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4350056507701275427}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6808181434655133276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3503774712279078514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcb9228f86820744c981b4cde69be719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ghostMaterial: {fileID: 2100000, guid: bad9be8f2b4627e479fe3eb7141efa43, type: 2}
-  defaultMaterial: {fileID: 2100000, guid: 8ef85058a7790dc41b50af184d2a65fd, type: 2}
 --- !u!54 &4853456570209258596
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -131,21 +102,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3503774712279078514}
-  serializedVersion: 4
-  m_Mass: 1
+  serializedVersion: 2
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -159,17 +119,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3503774712279078514}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7379232048189376802, guid: 721a7003375407e44b233a61f7288ae2, type: 3}
@@ -186,7 +138,6 @@ HingeJoint:
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
     spring: 1000
@@ -198,8 +149,6 @@ HingeJoint:
     force: 0
     freeSpin: 0
   m_UseLimits: 0
-  m_ExtendedLimits: 0
-  m_UseAcceleration: 0
   m_Limits:
     min: 0
     max: 0
@@ -212,3 +161,17 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 5
+--- !u!114 &6808181434655133276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3503774712279078514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb9228f86820744c981b4cde69be719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostMaterial: {fileID: 2100000, guid: bad9be8f2b4627e479fe3eb7141efa43, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: 8ef85058a7790dc41b50af184d2a65fd, type: 2}

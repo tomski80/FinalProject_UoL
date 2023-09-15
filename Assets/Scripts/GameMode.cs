@@ -15,6 +15,9 @@ public class GameMode : MonoBehaviour
     public Transform spawnPoint;
     public TMP_Text distanceText;
 
+    public float startingForce = -3200.0f;
+
+
     public void Start()
     {
         //pause game before we setup craft fully
@@ -27,6 +30,24 @@ public class GameMode : MonoBehaviour
         if(craftScript != null)
         {
             baseRB = craftScript.craftjointsParent.GetComponent<Rigidbody>();    // get the base rigid body component, so we can push it 
+
+            // check if we have wheel, if not we don't push 
+            // to avoid situation that we get better score without wheels 
+            // couldn't tweak physics to avoid it 
+            GameObject[] craftWheels = craftScript.CraftBuild.ToArray();
+            bool hasWheels = false;
+            foreach(GameObject craftWheel in craftWheels)
+            {
+                if(craftWheel.GetComponent<CraftPartWheel>())
+                {
+                    hasWheels = true;
+                }
+            }
+            if(!(hasWheels))
+            {
+                startingForce = startingForce / 5;
+                Debug.Log("No Wheels!");
+            }
         }
         
         foreach (Rigidbody craftPart in craftParts)
@@ -57,7 +78,7 @@ public class GameMode : MonoBehaviour
         {
             //we want to add constant force to the craft first
             Vector3 m_Direction = Vector3.forward;
-            baseRB.AddForce(m_Direction * -2000);
+            baseRB.AddForce(m_Direction * startingForce);
         }
     }
 
@@ -67,4 +88,5 @@ public class GameMode : MonoBehaviour
         distanceTravelled = Mathf.Max(0, distanceTravelled);
         distanceText.text = "Distance: " + distanceTravelled.ToString("F1") + "m";
     }
+
 }

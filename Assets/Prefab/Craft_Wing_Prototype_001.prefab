@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 595789900725523143}
   - component: {fileID: 595789900725523142}
   - component: {fileID: -2240231507150997278}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Craft_Wing_Prototype_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,6 +208,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   liftPower: 25
   maxLift: 10000
+  velocityScale: 10
 --- !u!138 &595789900725523142
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -246,7 +247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595789901564375767}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LiftTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595789902125135494}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LiftBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
