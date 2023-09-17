@@ -10,4 +10,9 @@ public class GameModeDesigner : MonoBehaviour
         Debug.Log("Load Game Level");
         SceneManager.LoadScene("GameplayLevel", LoadSceneMode.Single);
     }
+
+    public void OnQuitGame()
+    {
+        Application.Quit();
+    }
 }

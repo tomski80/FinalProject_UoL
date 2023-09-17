@@ -74,6 +74,8 @@
     <Compile Include="Assets\Scripts\Example.cs" />
     <Compile Include="Assets\Scripts\CraftPartInfo.cs" />
     <Compile Include="Assets\Scripts\GameModeDesigner.cs" />
+    <Compile Include="Assets\overlay.cs" />
+    <Compile Include="Assets\Scripts\PersistentData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

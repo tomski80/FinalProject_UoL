@@ -12,10 +12,22 @@ public class MenuButtonsManager : MonoBehaviour
     public GameObject[] scrollViews;
     public Transform[] contentContainters;
     public GameObject craftManager;
+    public overlay controlsOverlay;
 
     public TMP_Text steveTextBubble;
     public SteveManager steveManager;
 
+
+    public void Update()
+    {
+        if (PersistantData.overlayVisibility)
+        {
+            if (Input.anyKeyDown)
+            {
+                controlsOverlay.ToggleOverlay();
+            }
+        }
+    }
 
     //populate menu with Craft Parts Elements (buttons)
     public void OnEnable()
@@ -50,6 +62,8 @@ public class MenuButtonsManager : MonoBehaviour
             }
         }
     }
+
+
 
     public void OnClickBasesButton()
     {
